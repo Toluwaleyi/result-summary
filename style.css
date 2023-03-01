@@ -1,0 +1,278 @@
+
+@import url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+
+:root{
+    --white-:
+}
+body{
+    display: flex;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+    flex: 2;
+}
+.your-result{
+   background-image: linear-gradient(to top , hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: hsl(241, 100%, 89%);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 3rem;
+}
+.result-score{
+    height: 51rem;
+    width: 100%;
+    display: flex;
+    border-radius: 3rem;
+    box-shadow: 0.1rem 0.1rem 5rem lavender;
+}
+.socre-display {
+    background-image: linear-gradient(to bottom ,hsla(256, 72%, 46%, 1),hsla(256, 72%, 46%, 0));
+    border-radius: 50%;
+    padding: 4%;
+    margin: -6px;
+    width: 8rem;
+    text-align: center;
+    place-content: center;
+    display: flex;
+    /* flex-direction: inherit; */
+}
+.socre-display p span {
+    text-align: center;
+    font-weight: bold;
+    font-size: 5rem;
+    display: block;
+    color: white;
+}
+.summary h3 {
+    color: hsl(224, 30%, 27%);
+    position: relative;
+    left: 4%;
+    padding: 0.5rem;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+.p-great {
+    padding: 3px;
+    font-size: 18px;
+    text-align: center;
+    font-size: 18px;
+}
+
+ .detailed-summary {
+    /* margin: 96px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.detailed-summary span{
+    display: flex;
+    align-items: normal;
+}
+
+
+.item-reaction {
+    display: flex;
+    justify-content: space-between;
+    width: 19rem;
+    color: hsl(0, 100%, 67%);
+    align-items: center;
+    padding: 4%;
+    border-radius: 4%;
+    background-color: hsl(0deg 100% 67% / 16%);
+}
+.per-memory{
+    display: flex;
+    justify-content: space-between;
+    width: 19rem;
+    color:  hsl(39, 100%, 56%);
+    align-items: center;
+    padding: 4%;
+    border-radius: 4%;
+    background-color: hsla(39, 100%, 56%, 0.164); 
+}
+.per-verbal{
+    display: flex;
+    justify-content: space-between;
+    width: 19rem;
+    color:  hsl(166, 100%, 37%);
+    align-items: center;
+    padding: 4%;
+    border-radius: 4%;
+    background-color: hsla(166, 100%, 37%, 0.205) 
+}
+.per-visual{
+    display: flex;
+    justify-content: space-between;
+    width: 19rem;
+    color:  hsl(234, 85%, 45%);
+    align-items: center;
+    padding: 4%;
+    border-radius: 4%;
+    background-color: hsla(234, 85%, 45%, 0.164);
+}
+.bold{
+    font-size: 1.2rem;
+    font-weight: 800;
+    color:  hsl(224, 30%, 27%);
+}
+.less{
+    font-weight: lighter;
+    color: hsl(241, 100%, 89%);
+
+}
+
+.detailed-summary span img{
+    margin-right: 15px;
+}
+.margin{
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+}
+button{
+    width: 100%;
+    padding: 1.4rem;
+    border-radius: 2rem;
+    margin: 2rem;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    text-align: center;
+    border-color: hsl(224, 30%, 27%);
+    
+}
+button:hover{
+   background-color: blue;
+   border-color: hsl(241, 81%, 54%);
+   cursor:alias;
+}
+.great{
+    color: white;
+}
+
+
+@media screen and (max-width: 580px) {
+    
+
+
+    .your-result {
+        background-image: linear-gradient(to top , hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        color: hsl(241, 100%, 89%);
+        border-bottom-left-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+        margin: -8px;
+    }
+    .result-score{
+    height: 51rem;
+    width: 100%;
+    display: flex;
+    border-radius: 3rem;
+    flex-direction: column;
+    }
+    .socre-display {
+        background-image: linear-gradient(to bottom ,hsla(256, 72%, 46%, 1),hsla(256, 72%, 46%, 0));
+        border-radius: 50%;
+        padding: 4%;
+        margin: -7px;
+        width: 10rem;
+        text-align: center;
+        place-content: center;
+        display: flex;
+        /* flex-direction: inherit; */
+    }
+    .summary {
+        margin: auto;
+    }
+    .summary h3 {
+        color: hsl(224, 30%, 27%);
+        position: relative;
+        left: 0%;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    .p-great {
+        padding: 3px;
+        font-size: 18px;
+        text-align: center;
+    }
+   
+}
+
+
+@media screen and (min-width: 581px) { 
+
+    .your-result {
+        background-image: linear-gradient(to top , hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        color: hsl(241, 100%, 89%);
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        border-radius: inherit;
+        width: 26%;
+        HEIGHT: 54%;
+        font-size: 1.3rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        margin-left: -7rem;
+    }
+    h4{
+        padding: 0%;
+        margin-top: 2rem;
+    }
+    summary h3 {
+        color: hsl(224, 30%, 27%);
+        position: relative;
+        top: -2rem;
+        padding: 0.5rem;
+        margin-bottom: 22px;
+        margin-top: 22px;
+        top: -2rem;
+        left: -3rem;
+      } 
+     
+    .result-score {
+      /* height: 51rem; */
+    /* width: 100%; */
+    display: flex;
+    border-radius: 3rem;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    margin: 10%;
+    align-content: center;
+    padding: 0px;
+    flex-wrap: wrap;
+    /* flex: 0.7;*/
+    }
+    .summary{
+        margin-left: 11%;
+    }
+    .detailed-summary{
+        margin: -37px;
+    }
+    .summary h3 {
+        color: hsl(224, 30%, 27%);
+        /* position: relative; */
+        /* left: initial; */
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+        margin-top: -2rem;
+    }
+    .socre-display {
+        background-image: linear-gradient(to bottom ,hsla(256, 72%, 46%, 1),hsla(256, 72%, 46%, 0));
+        border-radius: 50%;
+        padding: 16%;
+        margin: -6px;
+        width: 10rem;
+        text-align: center;
+        place-content: center;
+        display: flex;
+        /* flex-direction: inherit; */
+    }
+}
